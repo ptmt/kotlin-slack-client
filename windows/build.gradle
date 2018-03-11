@@ -1,0 +1,12 @@
+apply plugin: 'konan'
+
+konan.targets = ['mingw']
+
+konanArtifacts {
+    //interop('windowsapi') {
+    //}
+
+    program('Window') {
+      //  linkerOpts "-Wl,--subsystem,windows"
+    }
+}

@@ -1,0 +1,14 @@
+apply plugin: 'konan'
+
+konan.targets = ['macbook']
+
+konanArtifacts {
+    program('KotlinSlack') {
+        //srcFiles fileTree('../shared/src/main/kotlin')
+        srcFiles fileTree('src/main/kotlin')
+
+        //libraries {
+        //    allLibrariesFrom common
+        //}
+    }
+}
