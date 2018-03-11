@@ -1,4 +1,6 @@
-package ui.primitives.buttons
+package ui.primitives
 
-class Button(title: String) {
+import ui.primitives.platform.PlatformButton
+
+class Button(title: String): PlatformButton(title) {
 }

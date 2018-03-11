@@ -18,7 +18,7 @@ open class Widget {
         }
 
     var opacity: Double
-        get {
+        get() {
             return gtk_widget_get_opacity(this.widgetPointer)
         }
         set(newValue) {
