@@ -11,3 +11,4 @@ if (konanBuildPath != null) {
 include ':macos'
 include ':windows'
 include ':linux'
+include ':ios'

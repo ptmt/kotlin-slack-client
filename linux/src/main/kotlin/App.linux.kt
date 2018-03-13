@@ -5,13 +5,14 @@ import kotlinx.cinterop.*
 import gtk3.*
 import ui.primitives.Window
 
+typealias WindowCallback = (PlatformWindow) -> Unit
+val Platform = "linux"
+
 class ApplicationWindow(application: PlatformApp): PlatformWindow() {
   init {
     widgetPointer = gtk_application_window_new(application.gtkApplicationPointer)
   }
 }
-
-typealias WindowCallback = (PlatformWindow) -> Unit
 
 fun activate(@Suppress("UNUSED_PARAMETER") appPointer: CPointer<GtkWidget>?, userdata: gpointer?) {
 

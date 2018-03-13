@@ -1,0 +1,10 @@
+apply plugin: 'konan'
+
+konan.targets = ['iphone', 'iphone_sim']
+
+konanArtifacts {
+    program('app') {
+      srcFiles fileTree('../common/src/main/kotlin')
+      srcFiles fileTree('src/main/kotlin')
+    }
+}
